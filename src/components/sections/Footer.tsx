@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Instagram, Facebook } from 'lucide-react';
+import { Instagram, MessageCircle } from 'lucide-react';
 import logo from '@/assets/logo-modista-ep.png';
 
 const Footer = () => {
@@ -39,11 +39,13 @@ const Footer = () => {
                 <Instagram className="w-4 h-4" />
               </a>
               <a
-                href="#"
+                href="https://wa.me/5491122472553?text=Hola%20Evelyn%2C%20me%20gustar%C3%ADa%20consultar%20por%20un%20arreglo."
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-primary-foreground/10 p-2.5 rounded-full hover:bg-primary-foreground/20 transition-colors"
-                aria-label="Facebook"
+                aria-label="WhatsApp"
               >
-                <Facebook className="w-4 h-4" />
+                <MessageCircle className="w-4 h-4" />
               </a>
             </div>
           </motion.div>

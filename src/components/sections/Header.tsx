@@ -17,7 +17,6 @@ const Header = ({ onMenuClick }: { onMenuClick: () => void }) => {
   const navLinks = [
     { id: 'servicios', label: 'Servicios' },
     { id: 'galeria', label: 'Galería' },
-    { id: 'precios', label: 'Precios' },
     { id: 'proceso', label: 'Proceso' },
     { id: 'contacto', label: 'Contacto' },
   ];

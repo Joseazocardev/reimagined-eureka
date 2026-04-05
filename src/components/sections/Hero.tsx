@@ -11,8 +11,8 @@ const Hero = () => {
       {/* Background image with overlay */}
       <div className="absolute inset-0">
         <img src={heroImage} alt="" className="w-full h-full object-cover" aria-hidden="true" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1a2010]/90 via-[#1a2010]/70 to-[#1a2010]/40" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1a2010]/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1a3029]/90 via-[#1a3029]/70 to-[#1a3029]/40" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#1a3029]/50 to-transparent" />
       </div>
 
       <div className="container mx-auto px-4 py-32 relative z-10">

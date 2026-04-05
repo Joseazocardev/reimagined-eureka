@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import { Scissors, ArrowDownUp, Ruler, Palette, DraftingCompass } from 'lucide-react';
+import { Scissors, ArrowDownUp, Ruler, Palette, DraftingCompass, MessageCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { scrollToSection } from '@/lib/utils';
+import { handleWhatsAppClick } from '@/lib/utils';
 
 const services = [
   { icon: <Scissors className="w-7 h-7" />, title: "Cierres", description: "Reparación y colocación de cierres de todo tipo con acabado perfecto." },
@@ -59,11 +59,12 @@ const Services = () => {
           viewport={{ once: true }}
         >
           <Button
-            onClick={() => scrollToSection('precios')}
+            onClick={handleWhatsAppClick}
             className="bg-primary hover:bg-olive-dark text-primary-foreground px-8 py-6 text-base font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
             size="lg"
           >
-            Ver Lista de Precios
+            <MessageCircle className="w-5 h-5 mr-2" />
+            Consultar por WhatsApp
           </Button>
         </motion.div>
       </div>

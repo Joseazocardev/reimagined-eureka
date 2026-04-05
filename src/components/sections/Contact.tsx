@@ -4,9 +4,9 @@ import { Button } from '@/components/ui/button';
 import { handleWhatsAppClick } from '@/lib/utils';
 
 const contactInfo = [
-  { icon: <Phone className="w-6 h-6" />, title: "Teléfono", value: "11 2247 2553" },
-  { icon: <MapPin className="w-6 h-6" />, title: "Ubicación", value: "H. Yrigoyen 144, Martínez" },
-  { icon: <Instagram className="w-6 h-6" />, title: "Instagram", value: "@modistaep" },
+  { icon: <Phone className="w-6 h-6" />, title: "Teléfono", value: "11 2247 2553", href: "https://wa.me/5491122472553?text=Hola%20Evelyn%2C%20me%20gustar%C3%ADa%20consultar%20por%20un%20arreglo." },
+  { icon: <MapPin className="w-6 h-6" />, title: "Ubicación", value: "H. Yrigoyen 144, Martínez", href: "https://maps.google.com/?q=H.+Yrigoyen+144,+Mart%C3%ADnez,+Buenos+Aires" },
+  { icon: <Instagram className="w-6 h-6" />, title: "Instagram", value: "@modistaep", href: "https://instagram.com/modistaep" },
 ];
 
 const Contact = () => {
@@ -32,20 +32,23 @@ const Contact = () => {
 
         <div className="grid md:grid-cols-3 gap-6 mb-14 max-w-3xl mx-auto">
           {contactInfo.map((item, index) => (
-            <motion.div
+            <motion.a
               key={index}
-              className="text-center"
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-center group cursor-pointer"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="bg-primary-foreground/10 w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-3 text-primary-foreground backdrop-blur-sm">
+              <div className="bg-primary-foreground/10 w-14 h-14 rounded-xl flex items-center justify-center mx-auto mb-3 text-primary-foreground backdrop-blur-sm group-hover:bg-primary-foreground/20 transition-colors">
                 {item.icon}
               </div>
               <h3 className="text-base font-semibold mb-1 text-primary-foreground">{item.title}</h3>
-              <p className="text-primary-foreground/80 text-sm">{item.value}</p>
-            </motion.div>
+              <p className="text-primary-foreground/80 text-sm group-hover:text-primary-foreground transition-colors">{item.value}</p>
+            </motion.a>
           ))}
         </div>
 

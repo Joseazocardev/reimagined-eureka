@@ -7,24 +7,24 @@
 @layer base {
   :root {
     --background: 40 30% 98%;
-    --foreground: 220 20% 14%;
+    --foreground: 156 24% 14%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 20% 14%;
+    --card-foreground: 156 24% 14%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 14%;
+    --popover-foreground: 156 24% 14%;
 
-    --primary: 78 25% 42%;
+    --primary: 156 24% 23%;
     --primary-foreground: 40 30% 98%;
 
     --secondary: 37 25% 92%;
-    --secondary-foreground: 220 20% 14%;
+    --secondary-foreground: 156 24% 23%;
 
     --muted: 40 15% 94%;
-    --muted-foreground: 220 10% 46%;
+    --muted-foreground: 156 15% 40%;
 
-    --accent: 33 40% 52%;
+    --accent: 33 39% 57%;
     --accent-foreground: 40 30% 98%;
 
     --destructive: 0 84.2% 60.2%;
@@ -32,29 +32,29 @@
 
     --border: 40 15% 88%;
     --input: 40 15% 88%;
-    --ring: 78 25% 42%;
+    --ring: 156 24% 23%;
 
     --radius: 0.75rem;
 
-    /* Custom brand tokens */
-    --olive: 78 25% 42%;
-    --olive-dark: 78 30% 30%;
-    --olive-light: 78 20% 62%;
-    --vintage: 78 22% 50%;
+    /* Custom brand tokens — Modista EP logo palette */
+    --olive: 87 16% 48%;
+    --olive-dark: 156 24% 23%;
+    --olive-light: 87 14% 62%;
+    --vintage: 87 16% 48%;
     --cream: 40 30% 98%;
     --warm-beige: 35 20% 90%;
     --light-beige: 40 25% 95%;
-    --brown-accent: 33 40% 52%;
-    --dark-text: 220 20% 14%;
-    --gold: 42 70% 55%;
+    --brown-accent: 33 39% 57%;
+    --dark-text: 156 24% 14%;
+    --gold: 33 39% 57%;
 
-    --gradient-brand: linear-gradient(135deg, hsl(78 25% 42%), hsl(78 30% 30%));
+    --gradient-brand: linear-gradient(135deg, hsl(156 24% 23%), hsl(156 28% 18%));
     --gradient-warm: linear-gradient(135deg, hsl(40 30% 98%), hsl(37 25% 92%));
-    --gradient-hero: linear-gradient(180deg, hsl(78 25% 42% / 0.04) 0%, transparent 60%);
-    --gradient-gold: linear-gradient(135deg, hsl(42 70% 55%), hsl(33 40% 52%));
-    --shadow-brand: 0 20px 40px hsl(78 25% 42% / 0.12);
-    --shadow-elevated: 0 25px 50px -12px hsl(220 20% 14% / 0.1);
-    --shadow-glass: 0 8px 32px hsl(220 20% 14% / 0.06);
+    --gradient-hero: linear-gradient(180deg, hsl(156 24% 23% / 0.04) 0%, transparent 60%);
+    --gradient-gold: linear-gradient(135deg, hsl(33 39% 57%), hsl(33 35% 45%));
+    --shadow-brand: 0 20px 40px hsl(156 24% 23% / 0.15);
+    --shadow-elevated: 0 25px 50px -12px hsl(156 24% 14% / 0.1);
+    --shadow-glass: 0 8px 32px hsl(156 24% 14% / 0.06);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -116,19 +116,6 @@
   .service-card:hover {
     transform: translateY(-6px);
     box-shadow: var(--shadow-brand);
-  }
-
-  .price-item {
-    @apply flex justify-between items-baseline py-3.5;
-    border-bottom: 1px dashed hsl(var(--border));
-  }
-
-  .price-item span:first-child {
-    @apply flex-grow mr-2 text-muted-foreground text-sm;
-  }
-
-  .price-item span:last-child {
-    @apply font-semibold text-foreground tabular-nums;
   }
 
   .whatsapp-float {
