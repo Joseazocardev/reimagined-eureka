@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Instagram, MessageCircle } from 'lucide-react';
-import logo from '@/assets/logo-modista-ep.png';
+import logo from '@/assets/logo-icon.png';
 
 const Footer = () => {
   return (
@@ -14,9 +14,9 @@ const Footer = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <img src={logo} alt="Modista EP" className="h-10 w-10 object-contain brightness-200" />
+            <img src={logo} alt="Modista EP" className="h-10 w-10 object-contain brightness-0 invert" />
             <div>
-              <h3 className="text-lg font-playfair font-bold">Modista EP</h3>
+              <h3 className="text-lg font-poppins font-bold">Modista EP</h3>
               <p className="text-xs text-primary-foreground/60">Profesional y Artesanal</p>
             </div>
           </motion.div>

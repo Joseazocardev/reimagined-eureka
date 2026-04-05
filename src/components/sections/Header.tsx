@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Menu } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { scrollToSection } from '@/lib/utils';
-import logo from '@/assets/logo-modista-ep.png';
+import logo from '@/assets/logo-icon.png';
 
 const Header = ({ onMenuClick }: { onMenuClick: () => void }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -24,7 +24,7 @@ const Header = ({ onMenuClick }: { onMenuClick: () => void }) => {
   return (
     <motion.header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
-        isScrolled ? 'bg-background/90 shadow-md backdrop-blur-xl py-2' : 'bg-transparent py-5'
+        isScrolled ? 'bg-white/95 shadow-md backdrop-blur-xl py-2' : 'bg-white/70 backdrop-blur-sm py-4'
       }`}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
@@ -37,7 +37,7 @@ const Header = ({ onMenuClick }: { onMenuClick: () => void }) => {
             className="flex items-center gap-2.5 cursor-pointer group"
           >
             <img src={logo} alt="Modista EP" className="h-10 w-10 object-contain" />
-            <span className="font-playfair font-bold text-lg text-foreground group-hover:text-primary transition-colors">
+            <span className="font-poppins font-bold text-lg text-foreground group-hover:text-primary transition-colors">
               Modista EP
             </span>
           </button>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -7,54 +7,53 @@
 @layer base {
   :root {
     --background: 40 30% 98%;
-    --foreground: 156 24% 14%;
+    --foreground: 156 17% 27%;
 
     --card: 0 0% 100%;
-    --card-foreground: 156 24% 14%;
+    --card-foreground: 156 17% 27%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 156 24% 14%;
+    --popover-foreground: 156 17% 27%;
 
-    --primary: 156 24% 23%;
-    --primary-foreground: 40 30% 98%;
+    --primary: 87 18% 51%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 37 25% 92%;
-    --secondary-foreground: 156 24% 23%;
+    --secondary: 40 25% 95%;
+    --secondary-foreground: 156 17% 27%;
 
     --muted: 40 15% 94%;
-    --muted-foreground: 156 15% 40%;
+    --muted-foreground: 156 10% 45%;
 
-    --accent: 33 39% 57%;
-    --accent-foreground: 40 30% 98%;
+    --accent: 31 39% 57%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 40 15% 88%;
     --input: 40 15% 88%;
-    --ring: 156 24% 23%;
+    --ring: 87 18% 51%;
 
     --radius: 0.75rem;
 
-    /* Custom brand tokens — Modista EP logo palette */
-    --olive: 87 16% 48%;
-    --olive-dark: 156 24% 23%;
-    --olive-light: 87 14% 62%;
-    --vintage: 87 16% 48%;
+    /* Modista EP — logo palette */
+    --olive: 87 18% 51%;
+    --olive-dark: 87 22% 42%;
+    --olive-light: 87 16% 65%;
     --cream: 40 30% 98%;
     --warm-beige: 35 20% 90%;
     --light-beige: 40 25% 95%;
-    --brown-accent: 33 39% 57%;
-    --dark-text: 156 24% 14%;
-    --gold: 33 39% 57%;
+    --brown-accent: 31 39% 57%;
+    --dark-text: 156 17% 27%;
+    --gold: 31 39% 57%;
 
-    --gradient-brand: linear-gradient(135deg, hsl(156 24% 23%), hsl(156 28% 18%));
+    --gradient-brand: linear-gradient(135deg, hsl(87 18% 51%), hsl(87 22% 42%));
     --gradient-warm: linear-gradient(135deg, hsl(40 30% 98%), hsl(37 25% 92%));
-    --gradient-hero: linear-gradient(180deg, hsl(156 24% 23% / 0.04) 0%, transparent 60%);
-    --gradient-gold: linear-gradient(135deg, hsl(33 39% 57%), hsl(33 35% 45%));
-    --shadow-brand: 0 20px 40px hsl(156 24% 23% / 0.15);
-    --shadow-elevated: 0 25px 50px -12px hsl(156 24% 14% / 0.1);
-    --shadow-glass: 0 8px 32px hsl(156 24% 14% / 0.06);
+    --gradient-hero: linear-gradient(180deg, hsl(156 17% 27% / 0.04) 0%, transparent 60%);
+    --gradient-gold: linear-gradient(135deg, hsl(31 39% 57%), hsl(31 35% 45%));
+    --shadow-brand: 0 20px 40px hsl(87 18% 51% / 0.2);
+    --shadow-elevated: 0 25px 50px -12px hsl(156 17% 27% / 0.1);
+    --shadow-glass: 0 8px 32px hsl(156 17% 27% / 0.06);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -74,11 +73,11 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
   }
 }
 

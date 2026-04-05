@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { scrollToSection } from '@/lib/utils';
-import logo from '@/assets/logo-modista-ep.png';
+import logo from '@/assets/logo-icon.png';
 
 const navLinks = [
   { id: 'inicio', label: 'Inicio' },
